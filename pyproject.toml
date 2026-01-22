@@ -1,0 +1,12 @@
+[project]
+name = "hls-stac-iceberg"
+version = "0.1.0"
+description = "Load HLS STAC Geoparquet into Apache Iceberg tables"
+requires-python = ">=3.13"
+dependencies = [
+    "duckdb>=1.4.3",
+    "obstore>=0.8.2",
+    "pyarrow>=23.0.0",
+    "pyiceberg[pyiceberg-core,s3fs,sql-sqlite]>=0.10.0",
+    "pytz>=2025.2",
+]
